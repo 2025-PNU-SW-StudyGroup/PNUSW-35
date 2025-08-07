@@ -74,8 +74,9 @@ markdown
 
 #### 2.1. 사용 기술
 > 스택 별(backend, frontend, designer등) 사용한 기술 및 버전을 작성하세요.
-> 
-> ex) React.Js - React14, Node.js - v20.0.2
+|QGIS|Python|
+|---|---|
+|v3.44.1|Python v3.11.13| 
 
 ### 3. 개발결과
 #### 3.1. 전체시스템 흐름도
