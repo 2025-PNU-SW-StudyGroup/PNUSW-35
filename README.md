@@ -73,8 +73,8 @@ markdown
 > <img width="1280" height="720" alt="슬라이드1" src="https://github.com/user-attachments/assets/ba0a86a7-38dc-4f59-baf8-e9d6d05601cb" />
 
 #### 2.1. 사용 기술
-> 스택 별(backend, frontend, designer등) 사용한 기술 및 버전을 작성하세요.
-| 이름                  | 버전    |
+
+| 이름                   | 버전     |
 |:---------------------:|:-------:|
 | Python                | 3.11.13 |
 | Qgis                  | 3.44.1  |
