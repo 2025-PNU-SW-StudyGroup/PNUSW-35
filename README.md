@@ -1,11 +1,3 @@
-## 2. 레파지토리 구성
-- 레파지토리 내에 `README.md` 파일 생성하고 아래의 가이드라인과 작성팁을 참고하여 파일을 작성하세요.
-- 레파지토리 내에 `docs` 폴더를 생성하고 폴더 내에는 과제 수행 하면서 작성한 각종 보고서, 발표자료를 올려둡니다.
-- 그 밖에 레파지토리의 폴더 구성은 과제 결과물에 따라 자유롭게 구성하되 가급적 코드의 목적이나 기능에 따라 폴더를 나누어 구성하세요.  
-<br/>
-
-markdown
-
 ### 1. 프로젝트 소개
 #### 1.1. 개발배경 및 필요성
 > 최근 기후변화로 인해 국지적 집중호우가 빈번해지며, 산림 지역에서의 산사태 발생 위험이 증가하고 있는 추세이다. 특히 임도는 산사태의 주요 발생 지점으로, 임도 하부에 위치한 민가 약 1,900채가 직접적인 위험에 노출되어 있어 예상되는 피해의 규모가 크다. 그러나 인력과 예산의 부족으로 인해 임도 주변의 배수 체계가 미비하며, 산사태 발생 이후에도 방치되는 사례가 다수 존재한다. 이에 따라 임도 기반의 산사태 위험 예측 및 사전 예방 체계 구축이 시급한 과제이다.
@@ -25,7 +17,6 @@ markdown
 - 강수량(csv): 방재기상관측 월강수량 합계
 
 ##### 분석 및 군집화
-
 임도 버퍼에 오버랩 되는 부분의 경사도, 공간 데이터를 추출, 각 공간데이터 변수들을 기반으로 한 k-means클러스터링 수행, 산사태 위험지도를 통해 클러스터별 위험도 파악, 산사태와 상관관계가 높은 요인 분석
 
 ##### 시각화 및 정책 제언
@@ -92,7 +83,8 @@ markdown
 > 
 > - 요효성 검사를 통과하지 못한 경우, 각 경고 문구가 입력창 하단에 표시됩니다.
 >   
-> - 유효성 검사를 통과한 경우, 로그인 버튼이 활성화 됩니다.
+> - 유효성 검사를 통과한 경우, 로그
+인 버튼이 활성화 됩니다.
 >   
 > - 로그인 버튼을 클릭 시, 입력한 이메일 주소와 비밀번호에 대한 계정이 있는지 확인합니다.
 >   
@@ -101,17 +93,21 @@ markdown
 > (영상)
 
 #### 3.3. 기능명세서
-> 개발한 제품에 대한 기능명세서를 작성해 제출하세요.
-> 
-> 노션 링크, 한글 문서, pdf 파일, 구글 스프레드 시트 등...
+> [고위험임도분석툴기능명세서 - 시트1.csv](https://github.com/user-attachments/files/21665827/-.1.csv)
 
 #### 3.4. 디렉토리 구조
-> 위 레포지토리의 디렉토리 구조를 설명하세요.
+| 폴더             | 설명                                            |
+| -------------- | --------------------------------------------- |
+| `DATA/`        | 분석에 사용된 주요 공간 데이터 저장소 (ex. 임도 버퍼 shapefile 등) |
+| `idh/`         | 임상도 데이터를 전처리하고 시각화한 코드 모음                     |
+| `jde/`         | 토양도 데이터를 시각화하고 분석한 코드                         |
+| `ksh/Result/`  | 경사도 및 산사태 이력 전처리, 클러스터링 분석, 최종 결과 생성 코드       |
+| `wjy/강수량/`     | 강수량 데이터를 시각화한 코드                              |
+| `wjy/산사태위험지도/` | 산사태위험지도 데이터를 시각화한 코드                          |
+
 
 ### 4. 설치 및 사용 방법
-> 제품을 설치하기 위헤 필요한 소프트웨어 및 설치 방법을 작성하세요.
->
-> 제품을 설치하고 난 후, 실행 할 수 있는 방법을 작성하세요.
+> 데이터를 위 폴더를 참고하여 코드 기반으로 전처리 후 제품을 설치하고 난 후, ksh/Result/ksh/클러스터링_데이터_총합.ipynb 을 다운받아 코드 실행
 
 ### 5. 소개 및 시연 영상
 > 프로젝트에 대한 소개와 시연 영상을 넣으세요.
@@ -119,137 +115,16 @@ markdown
 
 ### 6. 팀 소개
 > 팀원 소개 & 구성원 별 역할 분담 & 간단한 연락처를 작성하세요.
-
+| 이름                   | 역할     | 연락처|
+|:---------------------:|:-------:|:----:|
+| 김수현                  | 아이디어 기획 및 시각화|@pusan.ac.kr|
+| 우지예                  | 데이터 분석 및 시각화  |@pusan.ac.kr|
+| 임도향                  | 데이터 전처리 및 시각화|@pusan.ac.kr|
+| 장다은                  | 데이터 분석 및 시각화  |gracejang42@pusan.ac.kr|
 ### 7. 해커톤 참여 후기
 > 팀원 별 해커톤 참여 후기를 작성하세요.
-```
-<br/>
 
 
-## 4. README.md 작성 팁
-- 마크다운 언어를 이용해 README.md 파일을 작성할 때 참고할 수 있는 마크다운 언어 문법을 공유합니다.
-- 다양한 예제와 보다 자세한 문법은 [이 문서](https://www.markdownguide.org/basic-syntax/)를 참고하세요.
-
-### 4.1. 헤더 Header
-```
-# This is a Header 1
-## This is a Header 2
-### This is a Header 3
-#### This is a Header 4
-##### This is a Header 5
-###### This is a Header 6
-####### This is a Header 7 은 지원되지 않습니다.
-```
-
-# This is a Header 1
-## This is a Header 2
-### This is a Header 3
-#### This is a Header 4
-##### This is a Header 5
-###### This is a Header 6
-####### This is a Header 7 은 지원되지 않습니다.
-<br />
-
-### 4.2. 인용문 BlockQuote
-```
-> This is a first blockqute.
->	> This is a second blockqute.
->	>	> This is a third blockqute.
-```
-> This is a first blockqute.
->	> This is a second blockqute.
->	>	> This is a third blockqute.
-<br />
-
-### 4.3. 목록 List
-* **Ordered List**
-```
-1. first
-2. second
-3. third  
-```
-1. first
-2. second
-3. third
-<br />
-
-* **Unordered List**
-```
-* 하나
-  * 둘
-
-+ 하나
-  + 둘
-
-- 하나
-  - 둘
-```
-* 하나
-  * 둘
-
-+ 하나
-  + 둘
-
-- 하나
-  - 둘
-<br />
-
-### 4.4. 코드 CodeBlock
-* 코드 블럭 이용 '``'
-```
-여러줄 주석 "```" 이용
-"```
-#include <stdio.h>
-int main(void){
-  printf("Hello world!");
-  return 0;
-}
-```"
-
-단어 주석 "`" 이용
-"`Hello world`"
-
-* 큰 따움표(") 없이 사용하세요.
-``` 
-<br />
-
-### 4.5. 링크 Link
-```
-[Title](link)
-[부산대 소프트웨어융합교육원](https://swedu.pusan.ac.kr/swedu/index.do)
-
-<link>
-<https://swedu.pusan.ac.kr>
-``` 
-[부산대 소프트웨어융합교육원](https://swedu.pusan.ac.kr)
-
-<https://swedu.pusan.ac.kr>  
-<br />
-
-### 4.6. 강조 Highlighting
-```
-*single asterisks*
-_single underscores_
-**double asterisks**
-__double underscores__
-~~cancelline~~
-```
-*single asterisks* <br />
-_single underscores_ <br />
-**double asterisks** <br />
-__double underscores__ <br />
-~~cancelline~~  <br />
-<br />
-
-### 4.7. 이미지 Image
-```
-<img src="/path/to/img.jpg" width="600px" title="Title" alt="Alt text"></img>
-![Alt text](/path/to/img.jpg "Optional title")
-```
-<img src="https://github.com/pnuswedu/SW-Hackathon-2024/assets/34933690/be7beb64-490f-4480-b121-f25cde7f2a8d" width="600px" title="부산대학교 소프트웨어융합교육원" alt="부산대학교 소프트웨어융합교육원"></img>
-<br/>
-![부산대학교 소프트웨어융합교육원](https://github.com/pnuswedu/SW-Hackathon-2024/assets/34933690/884154bb-28f6-4498-9f64-a8a878972951, "부산대학교 소프트웨어융합교육원")
-<br/>
 
 
 
